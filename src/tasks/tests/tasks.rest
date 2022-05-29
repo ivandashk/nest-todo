@@ -1,0 +1,28 @@
+### Get all tasks
+GET http://localhost:3000/tasks
+
+### Get tasks with filters
+GET http://localhost:3000/tasks?status=DONE&search=eco
+
+### Get task by id
+GET http://localhost:3000/tasks/98f51df5-e3eb-4dac-8a50-8e2bfe2645c4
+
+### Create new task
+POST http://localhost:3000/tasks
+content-type: application/json
+
+{
+    "title": "Another task",
+    "description": "Another task description"
+}
+
+### Update task
+PATCH http://localhost:3000/tasks/a9716d5b-60d8-4579-a2d8-125d8588d826
+content-type: application/json
+
+{
+    "status": "DONE"
+}
+
+### Delete a task
+DELETE http://localhost:3000/tasks/f369241c-8bb6-4fab-9f1d-7849f6bbeb0a

@@ -10,7 +10,7 @@ import { TasksModule } from './tasks/tasks.module';
         type: 'sqlite',
         database: './db/task-management.db',
         autoLoadEntities: true,
-        synchronize: true
+        synchronize: true,
       }
     )
   ],
